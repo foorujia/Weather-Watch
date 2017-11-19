@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Drizzle</title>
+    <link rel="stylesheet" href="bootstrap.css"> 
+    <style type="text/css">
+</style> 
+</head>
+
+<body>
+    
+    <div class="autoheight" style="background-color:#fff; color:#000; width:100%">           
+        <div class="row" style="height:40%; width:100%">
+            
+            <div class="vertical-align center" style="width:100%">
+                <div class="col-md-3 col-sm-3">
+                    <img src="cloud.png" width="220" height="220" border="0">
+                </div>
+                <div class="col-md-3 col-sm-3 img_wrap">
+                    <a href="DrizzleTemp.html">
+                        <img src="sun.png" alt="Go to temperature!" width="300" height="300" border="0">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3" >
+                    <img src="cloud.png" width="180" height="180" border="0">
+                </div>
+                <div class="col-md-3 col-sm-3 img_wrap" style="padding-right: 5px;">
+                    <a href="DrizzleRain.html">
+                        <img src="rain.png" alt="Go to rainfall!" width="260" height="260" border="0">
+                    </a>
+                </div>
+            </div>
+            <div class="vertical-align center" style="width:100%">
+                
+            </div>
+        </div>
+        
+        <div class="bottom-picture img_wrap" style="width:100%; float:bottom; bottom:0px; position:fixed;">
+            <img src="singlelandscape.png" style="width:100%;">
+            <p class="img_description" style="font-size: 25px;">
+                <b>Objective</b>
+                </br>
+                </br>
+                An application that will provide the users with an interactive visualisation of
+                the historical weather data of Singapore since 1980. The visualisation will display
+                the data over time (yearly, monthly, daily), and over geographical area
+                (based on the locations of the AWS).
+                <br>
+                <br>
+                Please procees to click the Sun or the rainin
+                clouds to view the respective visualisations.
+            </p>
+            
+        </div>
+    </div>
+</body>
+
+<!-- change the height of the content based on the resolution of the screen -->
+<script>
+    var setElementHeight = function () {
+        var height = $(window).height();
+        $('.autoheight').css('min-height', (height));
+    };
+
+    $(window).on("resize", function () {
+        setElementHeight();
+    }).resize();
+</script> 
+
+</html>
